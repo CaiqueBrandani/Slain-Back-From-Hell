@@ -13,5 +13,147 @@
 /* Footer */
 
 /* Login */
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Raleway:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
 
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #242325 13.09%,
+    rgba(36, 35, 37, 0.89) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+section .container {
+  position: relative;
+  width: 1000px;
+  height: 475px;
+  left: 162;
+  top: 123;
+  background: linear-gradient(180deg, #292222 0%, #0b0b0b 43.46%);
+  box-shadow: 0px 4px 80px rgba(41, 25, 25, 0.25),
+    inset 0px 4px 80px rgba(41, 25, 25, 0.25);
+}
+
+section .container .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+section .container .user .imgBx {
+  position: relative;
+  width: 50%;
+  height: 101.5%;
+  transition: 0.5;
+}
+
+section .container .user .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .container .user .formBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: 0.5s;
+}
+
+section .container .user .formBx h2 {
+  font-size: 48px;
+  background-image: linear-gradient(
+    180deg,
+    #d00000 0%,
+    rgba(255, 0, 0, 0.74) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Grenze Gotisch";
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+section .container .user .formBx h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #fff;
+  margin: 2px auto;
+}
+
+section .container .user .formBx input {
+  background: transparent;
+  border: 4px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    180deg,
+    #570101 0%,
+    rgba(255, 0, 0, 0.74) 100%
+  );
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+section .container .user .formBx input[type="text"],
+section .container .user .formBx input[type="password"] {
+  width: 80%;
+  padding: 8px;
+  margin: 18px 0;
+  margin-left: 40px;
+}
+
+section .container .user .formBx input[type="submit"] {
+  width: 30%;
+  padding: 8px;
+  margin-left: 150px;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+section .container .user .formBx .signup {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+section .container .user .formBx .signup a {
+  background-image: linear-gradient(180deg, #570101 0%, #ff0000 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* Cadastro */
