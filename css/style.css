@@ -126,17 +126,11 @@ section .container .user .formBx h2::after {
 /* caixas do forms (todas)*/
 section .container .user .formBx input {
   background: transparent;
-  border: 4px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(
-    180deg,
-    #570101 0%,
-    rgba(255, 0, 0, 0.74) 100%
-  );
   font-size: 20px;
   letter-spacing: 1px;
 }
 
+/* cor texto input */
 input {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -148,6 +142,13 @@ section .container .user .formBx input[type="password"] {
   padding: 8px;
   margin: 18px 0;
   margin-left: 40px;
+  border: 4px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    180deg,
+    #570101 0%,
+    rgba(255, 0, 0, 0.74) 100%
+  );
 }
 
 /* botão */
@@ -156,7 +157,7 @@ section .container .user .formBx input[type="button"] {
   padding: 8px;
   margin-left: 150px;
   margin-bottom: 10px;
-  color: rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
 }
 
 /* texto em baixo do botão */
@@ -231,6 +232,10 @@ section .container.active .signinBx .imgBx {
 
   section .container .user .formBx {
     width: 100%;
+  }
+
+  section .container.active .user .signin .formBx {
+    bottom: 100%;
   }
 
   section .container .user .formBx input[type="button"] {
