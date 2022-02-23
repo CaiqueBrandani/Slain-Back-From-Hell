@@ -12,20 +12,43 @@
 <body>
   <section>
     <div class="container">
-      <div class="user signBx">
+      <div class="user signinBx">
         <div class="imgBx"><img src="img/Entrar.png" alt="Imagem Diálogo"></div>
         <div class="formBx">
           <form>
             <h2>Entrar</h2>
-            <input type="text" placeholder="Email ou nome de usuário">
-            <input type="password" placeholder="Senha">
-            <input type="submit" value="Entrar">
-            <p class="signup">Não possui uma conta? <a href="#">Cadastre-se.</a></p>
+            <input type="text" placeholder="Email ou nome de usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <input type="button" value="Entrar">
+            <p class="signup">Não possui uma conta? <a href="#" onclick="toggleForm();">Cadastre-se</a></p>
           </form>
         </div>
       </div>
+
+      <div class="user signupBx">
+        <div class="formBx">
+          <form>
+            <h2>Cadastre-se</h2>
+            <input type="text" placeholder="Nome de usuário" required>
+            <input type="text" placeholder="Email" required>
+            <input type="password" placeholder="Senha" required>
+            <input type="button" value="Cadastrar">
+            <p class="signup">Já possui uma conta? <a href="#" onclick="toggleForm();">Entrar</a></p>
+          </form>
+        </div>
+        <div class="imgBx"><img src="img/Cadastro.png" alt="Imagem Diálogo 2"></div>
+      </div>
     </div>
   </section>
+
+  <script>
+    function toggleForm() {
+      container = document.querySelector('section');
+      container = document.querySelector('.container');
+      container.classList.toggle('active');
+      section.classList.toggle('active');
+    }
+  </script>
 </body>
 
 </html>
