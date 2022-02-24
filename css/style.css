@@ -28,26 +28,32 @@ a {
 
 /* Header */
 
-header, .navbar {
-    backdrop-filter: blur(2px);
-    background: rgba(36, 35, 37, 0.3);
-    height: 86px;
-}
-
 #nav-container {
     padding-top: 0;
     padding-bottom: 0;
 }
 
 #logo {
-    width: 100px;
+    width: 164px;
     height: 60px;
+    padding-left: 64px;
 }
 
 #main-img {
     width: auto;
     height: auto;
     z-index: -1;
+}
+
+header, .navbar {
+    backdrop-filter: blur(2px);
+    background: rgba(36, 35, 37, 0.3);
+    height: 86px;
+}
+
+.navbar-nav {
+    padding-right: 35px;
+    padding-left: 50px;
 }
 
 .navbar-brand {
@@ -73,6 +79,49 @@ header, .navbar {
 }
 
 /* Sobre */
+
+#about-area {
+    margin-top: 900px;
+    background-image: url("../img/Background.png");
+    margin-left: 64px;
+    margin-right: 64px;
+    border-radius: 24px;
+}
+
+.about-title {
+    color: rgb(255, 255, 255);
+    margin: 0 0 45px 0;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Grenze Gotisch', Arial;
+    text-align: center;
+}
+
+.about-title::after {
+    content: "";
+    border-top: 2px solid rgb(255, 255, 255);
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+
+.about-text {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+}
+
+.about-list {
+    padding-top: 10px;
+}
+
+.espaco {
+    padding-bottom: 30px;
+    padding-top: 7px; 
+}
 
 /* Avaliações */
 
