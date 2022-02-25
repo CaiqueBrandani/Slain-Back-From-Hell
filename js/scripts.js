@@ -5,6 +5,7 @@ $( document ).ready(function() {
     // Para carregar primeiro as imagens:
     
     setTimeout(function() {
+        $('#main-area').parallax({imageSrc: 'img/Header.png'});
         $('#rating-area').parallax({imageSrc: 'img/Avaliacao.png'});
         $('#store-area').parallax({imageSrc: 'img/Loja_img.jpg'});
     }, 200);

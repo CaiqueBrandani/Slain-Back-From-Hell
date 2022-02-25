@@ -5,15 +5,16 @@ body {
 }
 
 a {
-    font-family: 'Grenze Gotisch', Arial;
-    font-size: 28px;
+  font-family: "Grenze Gotisch", Arial;
+  font-size: 28px;
 }
 
 .gradiente {
+    font-family: "Grenze Gotisch", Arial;
     background-image: linear-gradient(#990000, #ff0000);
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent; 
+    color: transparent;
 }
 
 .container {
@@ -93,12 +94,12 @@ header,
 }
 
 .about-title {
-    color: rgb(255, 255, 255);
-    margin: 0 0 45px 0;
-    font-size: 40px;
-    font-weight: normal;
-    font-family: 'Grenze Gotisch', Arial;
-    text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 0 0 45px 0;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Grenze Gotisch", Arial;
+  text-align: center;
 }
 
 .about-title::after {
@@ -111,11 +112,11 @@ header,
 }
 
 .about-text {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-weight: lighter;
-    font-family: 'Raleway', sans-serif;
-    text-align: left;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Raleway", sans-serif;
+  text-align: left;
 }
 
 #about-list li {
@@ -271,6 +272,10 @@ header,
 
 /* Loja */
 
+#store-area {
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.678);
+}
+
 .img-store {
     background-image: url("../img/Loja_img.jpg");
     background-attachment: fixed;
@@ -302,8 +307,6 @@ header,
     margin-top: 2%;
     margin-left: 6%;
 }
-
-
 
 .card-store-img {
     color:rgb(255, 255, 255);
@@ -342,6 +345,257 @@ header,
 
 /* Footer */
 
-/* Login */
+/* Login e Cadastro */
 
-/* Cadastro */ 
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Raleway:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+/* tela inteira */
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #242325 13.09%,
+    rgba(36, 35, 37, 0.89) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+/* o quadrado onde fica a imagem e o forms */
+
+section .container {
+  position: relative;
+  width: 1000px;
+  height: 475px;
+  left: 162;
+  top: 123;
+  background: linear-gradient(180deg, #292222 0%, #0b0b0b 43.46%);
+  box-shadow: 0px 4px 80px rgba(41, 25, 25, 0.25),
+    inset 0px 4px 80px rgba(41, 25, 25, 0.25);
+  overflow: hidden;
+}
+
+/* parte que vai ser usada com a imagem e com o forms */
+
+section .container .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* espaço da imagem */
+
+section .container .user .imgBx {
+  position: relative;
+  width: 50%;
+  height: 101.5%;
+  transition: 0.5;
+}
+
+/* imagens */
+
+section .container .user .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* espaço do formulário */
+
+section .container .user .formBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: 0.5s;
+}
+
+/* título "Entrar" */
+
+section .container .user .formBx h2 {
+  font-size: 48px;
+  font-family: "Grenze Gotisch";
+
+  /* início do degradê */
+
+  background-image: linear-gradient(
+    180deg,
+    #d00000 0%,
+    rgba(255, 0, 0, 0.74) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* fim do degradê */
+
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* after título */
+
+section .container .user .formBx h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #fff;
+  margin: 2px auto;
+}
+
+/* caixas do forms (todas)*/
+
+section .container .user .formBx input {
+  background: transparent;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* cor texto input */
+
+input {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* caixas do forms (email e senha) */
+
+section .container .user .formBx input[type="text"],
+section .container .user .formBx input[type="password"] {
+  width: 80%;
+  padding: 8px;
+  margin: 18px 0;
+  margin-left: 40px;
+  border: 4px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    180deg,
+    #570101 0%,
+    rgba(255, 0, 0, 0.74) 100%
+  );
+}
+
+/* botão */
+
+section .container .user .formBx input[type="button"] {
+  width: 30%;
+  padding: 8px;
+  margin-left: 150px;
+  margin-bottom: 10px;
+  border-radius: 24px;
+}
+
+/* texto em baixo do botão */
+
+section .container .user .formBx .signup {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* link após o texto em baixo do botão */
+
+section .container .user .formBx .signup a {
+  font-size: 20px;
+  background-image: linear-gradient(180deg, #570101 0%, #ff0000 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Cadastro */
+
+section .container .signupBx {
+  pointer-events: none;
+}
+
+section .container.active .signupBx {
+  pointer-events: initial;
+}
+
+section .container .signupBx .formBx {
+  top: 100%;
+}
+
+section .container.active .signupBx .formBx {
+  top: 0;
+}
+
+section .container .signupBx .imgBx {
+  top: -100%;
+  transition: 0.5s;
+}
+
+section .container.active .signupBx .imgBx {
+  top: 0;
+}
+
+section .container .signinBx .formBx {
+  top: 0;
+}
+
+section .container.active .signinBx .formBx {
+  top: 100%;
+}
+
+section .container .signinBx .imgBx {
+  top: 0;
+  transition: 0.5s;
+}
+
+section .container.active .signinBx .imgBx {
+  top: -100%;
+}
+
+@media (max-width: 1000px) {
+  section .container {
+    max-width: 400px;
+  }
+
+  section .container .imgBx {
+    display: none;
+  }
+
+  section .container .user .formBx {
+    width: 100%;
+  }
+
+  section .container.active .user .signin .formBx {
+    bottom: 100%;
+  }
+
+  section .container .user .formBx input[type="button"] {
+    width: 40%;
+    padding: 8px;
+    margin-left: 110px;
+    margin-bottom: 10px;
+  }
+}
