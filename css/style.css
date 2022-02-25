@@ -26,6 +26,8 @@ a {
 
 /* Header */
 
+header, 
+
 #nav-container {
     padding-top: 0;
     padding-bottom: 0;
@@ -37,52 +39,47 @@ a {
     padding-left: 29%;
 }
 
-header, .navbar {
-    backdrop-filter: blur(2px);
-    background: rgba(36, 35, 37, 0.25);
-    height: 86px;
-    width: 100%;
-    z-index: 1;
-    position: fixed;
-}
-
 #main-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.show .navbar-nav {
-    backdrop-filter: blur(2px);
+.navbar {
+    position: fixed;
     background-color: rgba(36, 35, 37, 0.25);
-    margin-top: 8px;
-}
-
-.navbar-nav {
-    padding-right: 35px;
-    padding-left: 50px;
-}
-
-.navbar-brand {
-    padding: 0;
-    color: rgb(22, 22, 22);
+    backdrop-filter: blur(2.5px);
+    box-shadow: 0 0 2em rgba(14, 1, 1, 0.5);
+    width: 100vw;
+    top: 0;
     z-index: 1;
 }
 
-.navbar-brand:hover {
-    color: rgba(208, 0, 0, 1);
+.navbar .logo {
+    height: 60px;
+    padding-right: 5%;
+}
+
+.navbar-nav {
+    padding-right: 50px;
+    padding-left: 33px;
+}
+
+.navbar .nav .active a,
+.navbar .nav :hover a {
+    color: rgb(255, 255, 255);
 }
 
 #navbar-links a {
-    color: rgba(208, 0, 0, 0.281);
+    color: rgba(208, 0, 0, 0.781);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: .9rem .9rem;
+    padding: .5rem .9rem;
 }
-  
-.nav-item.active {
-    border-bottom: 5px solid rgba(208, 0, 0, 0);
+
+.navbar-toggler {
+    margin-right: 7%;
 }
 
 /* Sobre */
@@ -129,14 +126,14 @@ header, .navbar {
     margin-bottom: 30px;
     margin-top: 7px;
     border-radius: 24px;
-    box-shadow: 0 0 2em rgba(14, 1, 1, 0.863);
+    box-shadow: 0 0 2em rgba(32, 1, 1, 0.678);;
 }
 
 /* Avaliações */
 
 #rating-area {
     margin-top: 64px;
-    box-shadow: 0 0 1.5em rgba(14, 1, 1, 0.863);
+    box-shadow: 0 0 2em rgba(32, 1, 1, 0.678);
 }
 
 #img-rating {
@@ -168,6 +165,12 @@ header, .navbar {
 .card {
     background-color:rgb(20, 20, 20, 0.7);
     margin-top: 5%;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.card:hover {
+    transform: scale(1.13);
 }
 
 .card-flex {
@@ -212,6 +215,58 @@ header, .navbar {
 }
 
 /* Galeria */
+
+#gallery-area {
+    background-color: rgb(20, 20, 20, 0.7);
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.678);
+    margin-left: 64px;
+    margin-right: 64px;
+    border-radius: 24px;
+    margin-top: 60px;
+}
+
+.gallery-title {
+    color: rgb(255, 255, 255);
+    margin: 0 0 45px 0;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Grenze Gotisch', Arial;
+    text-align: center;
+}
+
+.gallery-title::after {
+    content: "";
+    border-top: 2px solid rgb(255, 255, 255);
+    width: 6%;
+    position: absolute;
+    top: 60px;
+    left: 47%;
+}
+
+.carousel-indicators .active {
+    background-color: #ff0000cb;
+}
+
+.gallery-gif {
+    width: 600px;
+    height: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.carousel-item {
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.carousel-control-prev-icon {
+    margin-right: 15%;
+}
+
+.carousel-control-next-icon {
+    margin-left: 15%;
+}
 
 /* Loja */
 
