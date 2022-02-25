@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/icon_login.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="user signinBx">
+        <div class="imgBx"><img src="img/Entrar.png" alt="Imagem Diálogo"></div>
+        <div class="formBx">
+          <form>
+            <h2>Entrar</h2>
+            <input type="text" placeholder="Email ou nome de usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <a href="index.html">
+              <input type="button" value="Entrar">
+            </a>
+            <p class="signup">Não possui uma conta? <a href="#" onclick="toggleForm();">Cadastre-se</a></p>
+          </form>
+        </div>
+      </div>
+
+      <div class="user signupBx">
+        <div class="formBx">
+          <form>
+            <h2>Cadastre-se</h2>
+            <input type="text" placeholder="Nome de usuário" required>
+            <input type="text" placeholder="Email" required>
+            <input type="password" placeholder="Senha" required>
+            <a href="login.html">
+              <input type="button" value="Cadastrar" link="login.html">
+            </a>
+            <p class="signup">Já possui uma conta? <a href="#" onclick="toggleForm();">Entrar</a></p>
+          </form>
+        </div>
+        <div class="imgBx"><img src="img/Cadastro.png" alt="Imagem Diálogo 2"></div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleForm() {
+      container = document.querySelector('section');
+      container = document.querySelector('.container');
+      container.classList.toggle('active');
+      section.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>
