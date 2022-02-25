@@ -2,8 +2,6 @@
 
 body {
     background-color:rgba(36, 35, 37, 1);
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
 }
 
 a {
@@ -34,21 +32,30 @@ a {
 }
 
 #logo {
-    width: 164px;
-    height: 60px;
-    padding-left: 64px;
-}
-
-#main-img {
-    width: auto;
-    height: auto;
-    z-index: -1;
+    width: 160px;
+    height: 70px;
+    padding-left: 29%;
 }
 
 header, .navbar {
     backdrop-filter: blur(2px);
-    background: rgba(36, 35, 37, 0.3);
+    background: rgba(36, 35, 37, 0.25);
     height: 86px;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+}
+
+#main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.show .navbar-nav {
+    backdrop-filter: blur(2px);
+    background-color: rgba(36, 35, 37, 0.25);
+    margin-top: 8px;
 }
 
 .navbar-nav {
@@ -81,8 +88,8 @@ header, .navbar {
 /* Sobre */
 
 #about-area {
-    margin-top: 900px;
     background-image: url("../img/Background.png");
+    box-shadow: 0 0 1.5em rgba(14, 1, 1, 0.863);
     margin-left: 64px;
     margin-right: 64px;
     border-radius: 24px;
@@ -100,10 +107,10 @@ header, .navbar {
 .about-title::after {
     content: "";
     border-top: 2px solid rgb(255, 255, 255);
-    width: 15%;
+    width: 25%;
     position: absolute;
     top: 60px;
-    left: 42.5%;
+    left: 35.5%;
 }
 
 .about-text {
@@ -114,16 +121,95 @@ header, .navbar {
     text-align: left;
 }
 
-.about-list {
+#about-list li {
     padding-top: 10px;
 }
 
-.espaco {
-    padding-bottom: 30px;
-    padding-top: 7px; 
+.about-img {
+    margin-bottom: 30px;
+    margin-top: 7px;
+    border-radius: 24px;
+    box-shadow: 0 0 2em rgba(14, 1, 1, 0.863);
 }
 
 /* Avaliações */
+
+#rating-area {
+    margin-top: 64px;
+    box-shadow: 0 0 1.5em rgba(14, 1, 1, 0.863);
+}
+
+#img-rating {
+    background-image: url("../img/Avaliacao.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rating-title {
+    color: rgb(255, 255, 255);
+    margin: 0 0 45px 0;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Grenze Gotisch', Arial;
+    text-align: center;
+}
+
+.rating-title::after {
+    content: "";
+    border-top: 2px solid rgb(255, 255, 255);
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+
+.card {
+    background-color:rgb(20, 20, 20, 0.7);
+    margin-top: 5%;
+}
+
+.card-flex {
+    display: flex;
+}
+
+.card-title {
+    font-family: 'Grenze Gotisch', Arial;
+    background-image: linear-gradient(#990000, #ff0000d2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: 5%; 
+}
+
+.card-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+.card-img {
+    margin-top: 10px;
+    width: 69px;
+    height: 74px;
+    margin-left: 5%;
+}
+
+.five-star {
+    margin-top: 10px;
+    margin-left: 23%;
+    margin-top: 5%;
+}
+
+.four-star {
+    margin-top: 10px;
+    margin-left: 28%;
+    margin-top: 5%;
+}
 
 /* Galeria */
 
