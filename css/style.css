@@ -57,6 +57,18 @@ header,
   padding-left: 50px;
 }
 
+header,
+.navbar {
+  backdrop-filter: blur(2px);
+  background: rgba(36, 35, 37, 0.3);
+  height: 86px;
+}
+
+.navbar-nav {
+  padding-right: 35px;
+  padding-left: 50px;
+}
+
 .navbar-brand {
   padding: 0;
   color: rgb(22, 22, 22);
