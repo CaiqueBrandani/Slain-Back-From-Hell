@@ -6,6 +6,7 @@ $( document ).ready(function() {
     
     setTimeout(function() {
         $('#rating-area').parallax({imageSrc: 'img/Avaliacao.png'});
+        $('#store-area').parallax({imageSrc: 'img/Loja_img.jpg'});
     }, 200);
     
     // Scroll para as seções

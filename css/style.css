@@ -170,7 +170,7 @@ header,
 }
 
 .card:hover {
-    transform: scale(1.13);
+    transform: scale(1.1);
 }
 
 .card-flex {
@@ -223,6 +223,7 @@ header,
     margin-right: 64px;
     border-radius: 24px;
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .gallery-title {
@@ -249,7 +250,7 @@ header,
 
 .gallery-gif {
     width: 600px;
-    height: auto;
+    height: 347px;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 20px;
@@ -270,8 +271,77 @@ header,
 
 /* Loja */
 
+.img-store {
+    background-image: url("../img/Loja_img.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.store-title {
+    color: rgb(255, 255, 255);
+    margin: 0 0 45px 0;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Grenze Gotisch', Arial;
+    text-align: center;
+}
+
+.store-title::after {
+    content: "";
+    border-top: 2px solid rgb(255, 255, 255);
+    width: 15%;
+    position: absolute;
+    top: 55%;
+    left: 42.5%;
+}
+
+.card-store {
+    color:rgb(255, 255, 255);
+    margin-top: 2%;
+    margin-left: 6%;
+}
+
+
+
+.card-store-img {
+    color:rgb(255, 255, 255);
+    margin-top: 2%;
+    margin-left: 6%;
+    height: 69px;
+    width: 69px;
+
+}
+
+.card-store-title {
+    color: rgb(255, 255, 255);
+    margin: 0 0 45px 0;
+    font-size: 48px;
+    font-weight: normal;
+    font-family: 'Grenze Gotisch', Arial;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+.card-store-title:after {
+    content: "";
+    border-top: 2px solid rgb(255, 255, 255);
+    width: 70%;
+    position: absolute;
+    top: 28%;
+    left: 23%;
+}
+
+.store-list {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    margin-left: 2%;
+}
+
 /* Footer */
 
 /* Login */
 
-/* Cadastro */
+/* Cadastro */ 
