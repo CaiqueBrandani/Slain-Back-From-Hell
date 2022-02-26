@@ -9,6 +9,10 @@ a {
   font-size: 28px;
 }
 
+.row {
+    margin-right: 0px;
+}
+
 .gradiente {
   font-family: "Grenze Gotisch", Arial;
   background-image: linear-gradient(#990000, #ff0000);
@@ -132,8 +136,8 @@ header,
 /* Avaliações */
 
 #rating-area {
-  margin-top: 64px;
-  box-shadow: 0 0 2em rgba(32, 1, 1, 0.678);
+    margin-top: 60px;
+    box-shadow: 0 0 2em rgba(32, 1, 1, 0.678);
 }
 
 #img-rating {
@@ -217,13 +221,12 @@ header,
 /* Galeria */
 
 #gallery-area {
-  background-color: rgb(20, 20, 20, 0.7);
-  box-shadow: 0 0 2em rgba(0, 0, 0, 0.678);
-  margin-left: 64px;
-  margin-right: 64px;
-  border-radius: 24px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+    background-color: rgb(20, 20, 20, 0.7);
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.678);
+    margin-left: 64px;
+    margin-right: 64px;
+    border-radius: 24px;
+    margin-top: 60px;
 }
 
 .gallery-title {
@@ -257,8 +260,8 @@ header,
 }
 
 .carousel-item {
-  text-align: center;
-  padding-bottom: 3%;
+    text-align: center;
+    margin-bottom: 3%;
 }
 
 .carousel-control-prev-icon {
@@ -272,7 +275,8 @@ header,
 /* Loja */
 
 #store-area {
-  box-shadow: 0 0 2em rgba(0, 0, 0, 0.678);
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.678);
+    margin-top: 60px;
 }
 
 .img-store {
@@ -301,10 +305,21 @@ header,
   left: 42.5%;
 }
 
-.card-store {
-  color: rgb(255, 255, 255);
-  margin-top: 2%;
-  margin-left: 6%;
+.card-logo {
+    color:rgb(255, 255, 255);
+    margin-top: 2%;
+    margin-left: 6%;
+}
+
+.store-card {
+    transition: .2s;
+}
+
+.store-card:hover {
+    border-color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #0b0b0bc4;
 }
 
 .card-store-img {
@@ -335,13 +350,93 @@ header,
 }
 
 .store-list {
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  color: rgb(255, 255, 255);
-  margin-left: 2%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    margin-left: 11%;
+}
+
+#store-area .container a {
+    color: rgb(255, 255, 255);
+    font-size: none;
+    font-size: 22px;
+}
+
+#store-area .container a:hover {
+    text-decoration: none;
 }
 
 /* Footer */
+
+#footer-area {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 12%, rgba(5,5,5,0.9) 62%, rgba(20,20,20,0.8) 92%);
+    margin-top: 3%;
+    text-align: center;
+}
+
+.footer-title {
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    font-weight: normal;
+    font-family: 'Grenze Gotisch', Arial;
+    margin-top: 0.3%;
+}
+
+.footer-title::after {
+    content: "";
+    border-top: 2px solid rgb(255, 255, 255);
+    width: 8%;
+    position: absolute;
+    top: 44%;
+    left: 46%;
+}
+
+.footer-icons i {
+    color:rgb(255, 255, 255);
+    margin-top: 1.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+
+
+/* copy */
+
+#copy-area {
+    background-color: #000000;
+}
+  
+#copy-area .container {
+    padding: 10px 0;
+    text-align: center;
+}
+  
+#copy-area .container p {
+    font-family: "Grenze Gotisch", Arial;
+    margin-bottom: 0;
+    color:rgb(255, 255, 255);
+}
+  
+#copy-area .container p:hover {
+    background-image: linear-gradient(#990000, #ff0000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#copy-area .container a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+  
+#copy-area .container a:hover {
+    text-decoration: none;
+    background-image: linear-gradient(#990000, #ff0000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 /* Login e Cadastro */
 
