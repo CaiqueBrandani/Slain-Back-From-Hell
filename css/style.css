@@ -1,7 +1,7 @@
 /* Geral */
 
 body {
-    background-color:rgba(36, 35, 37, 1);
+  background-color: rgba(36, 35, 37, 1);
 }
 
 a {
@@ -14,87 +14,86 @@ a {
 }
 
 .gradiente {
-    font-family: "Grenze Gotisch", Arial;
-    background-image: linear-gradient(#990000, #ff0000);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+  font-family: "Grenze Gotisch", Arial;
+  background-image: linear-gradient(#990000, #ff0000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .container {
-    padding: 70px;
+  padding: 70px;
 }
 
 .container-fluid {
-    padding: 0;
+  padding: 0;
 }
 
 /* Header */
 
-header, 
-
+header,
 #nav-container {
-    padding-top: 0;
-    padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 #logo {
-    width: 160px;
-    height: 70px;
-    padding-left: 29%;
+  width: 160px;
+  height: 70px;
+  padding-left: 29%;
 }
 
 #main-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .navbar {
-    position: fixed;
-    background-color: rgba(36, 35, 37, 0.25);
-    backdrop-filter: blur(2.5px);
-    box-shadow: 0 0 2em rgba(14, 1, 1, 0.5);
-    width: 100vw;
-    top: 0;
-    z-index: 1;
+  position: fixed;
+  background-color: rgba(36, 35, 37, 0.25);
+  backdrop-filter: blur(2.5px);
+  box-shadow: 0 0 2em rgba(14, 1, 1, 0.5);
+  width: 100vw;
+  top: 0;
+  z-index: 1;
 }
 
 .navbar .logo {
-    height: 60px;
-    padding-right: 5%;
+  height: 60px;
+  padding-right: 5%;
 }
 
 .navbar-nav {
-    padding-right: 50px;
-    padding-left: 33px;
+  padding-right: 50px;
+  padding-left: 33px;
 }
 
 .navbar .nav .active a,
 .navbar .nav :hover a {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 #navbar-links a {
-    color: rgba(208, 0, 0, 0.781);
+  color: rgba(208, 0, 0, 0.781);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: .5rem .9rem;
+  padding: 0.5rem 0.9rem;
 }
 
 .navbar-toggler {
-    margin-right: 7%;
+  margin-right: 7%;
 }
 
 /* Sobre */
 
 #about-area {
-    background-image: url("../img/Background.png");
-    box-shadow: 0 0 1.5em rgba(14, 1, 1, 0.863);
-    margin-left: 64px;
-    margin-right: 64px;
-    border-radius: 24px;
+  background-image: url("../img/Background.png");
+  box-shadow: 0 0 1.5em rgba(14, 1, 1, 0.863);
+  margin-left: 64px;
+  margin-right: 64px;
+  border-radius: 24px;
 }
 
 .about-title {
@@ -107,12 +106,12 @@ header,
 }
 
 .about-title::after {
-    content: "";
-    border-top: 2px solid rgb(255, 255, 255);
-    width: 25%;
-    position: absolute;
-    top: 60px;
-    left: 35.5%;
+  content: "";
+  border-top: 2px solid rgb(255, 255, 255);
+  width: 25%;
+  position: absolute;
+  top: 60px;
+  left: 35.5%;
 }
 
 .about-text {
@@ -124,14 +123,14 @@ header,
 }
 
 #about-list li {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .about-img {
-    margin-bottom: 30px;
-    margin-top: 7px;
-    border-radius: 24px;
-    box-shadow: 0 0 2em rgba(32, 1, 1, 0.678);;
+  margin-bottom: 30px;
+  margin-top: 7px;
+  border-radius: 24px;
+  box-shadow: 0 0 2em rgba(32, 1, 1, 0.678);
 }
 
 /* Avaliações */
@@ -142,81 +141,81 @@ header,
 }
 
 #img-rating {
-    background-image: url("../img/Avaliacao.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../img/Avaliacao.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .rating-title {
-    color: rgb(255, 255, 255);
-    margin: 0 0 45px 0;
-    font-size: 40px;
-    font-weight: normal;
-    font-family: 'Grenze Gotisch', Arial;
-    text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 0 0 45px 0;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Grenze Gotisch", Arial;
+  text-align: center;
 }
 
 .rating-title::after {
-    content: "";
-    border-top: 2px solid rgb(255, 255, 255);
-    width: 15%;
-    position: absolute;
-    top: 60px;
-    left: 42.5%;
+  content: "";
+  border-top: 2px solid rgb(255, 255, 255);
+  width: 15%;
+  position: absolute;
+  top: 60px;
+  left: 42.5%;
 }
 
 .card {
-    background-color:rgb(20, 20, 20, 0.7);
-    margin-top: 5%;
-    transform: scale(1);
-    transition: .5s;
+  background-color: rgb(20, 20, 20, 0.7);
+  margin-top: 5%;
+  transform: scale(1);
+  transition: 0.5s;
 }
 
 .card:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .card-flex {
-    display: flex;
+  display: flex;
 }
 
 .card-title {
-    font-family: 'Grenze Gotisch', Arial;
-    background-image: linear-gradient(#990000, #ff0000d2);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 30px;
-    margin-top: 10%;
-    margin-left: 5%; 
+  font-family: "Grenze Gotisch", Arial;
+  background-image: linear-gradient(#990000, #ff0000d2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 30px;
+  margin-top: 10%;
+  margin-left: 5%;
 }
 
 .card-text {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    color:rgb(255, 255, 255);
-    text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 .card-img {
-    margin-top: 10px;
-    width: 69px;
-    height: 74px;
-    margin-left: 5%;
+  margin-top: 10px;
+  width: 69px;
+  height: 74px;
+  margin-left: 5%;
 }
 
 .five-star {
-    margin-top: 10px;
-    margin-left: 23%;
-    margin-top: 5%;
+  margin-top: 10px;
+  margin-left: 23%;
+  margin-top: 5%;
 }
 
 .four-star {
-    margin-top: 10px;
-    margin-left: 28%;
-    margin-top: 5%;
+  margin-top: 10px;
+  margin-left: 28%;
+  margin-top: 5%;
 }
 
 /* Galeria */
@@ -231,33 +230,33 @@ header,
 }
 
 .gallery-title {
-    color: rgb(255, 255, 255);
-    margin: 0 0 45px 0;
-    font-size: 40px;
-    font-weight: normal;
-    font-family: 'Grenze Gotisch', Arial;
-    text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 0 0 45px 0;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Grenze Gotisch", Arial;
+  text-align: center;
 }
 
 .gallery-title::after {
-    content: "";
-    border-top: 2px solid rgb(255, 255, 255);
-    width: 6%;
-    position: absolute;
-    top: 60px;
-    left: 47%;
+  content: "";
+  border-top: 2px solid rgb(255, 255, 255);
+  width: 6%;
+  position: absolute;
+  top: 60px;
+  left: 47%;
 }
 
 .carousel-indicators .active {
-    background-color: #ff0000cb;
+  background-color: #ff0000cb;
 }
 
 .gallery-gif {
-    width: 600px;
-    height: 347px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 20px;
+  width: 600px;
+  height: 347px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 20px;
 }
 
 .carousel-item {
@@ -266,11 +265,11 @@ header,
 }
 
 .carousel-control-prev-icon {
-    margin-right: 15%;
+  margin-right: 15%;
 }
 
 .carousel-control-next-icon {
-    margin-left: 15%;
+  margin-left: 15%;
 }
 
 /* Loja */
@@ -281,31 +280,30 @@ header,
 }
 
 .img-store {
-    background-image: url("../img/Loja_img.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../img/Loja_img.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .store-title {
-    color: rgb(255, 255, 255);
-    margin: 0 0 45px 0;
-    font-size: 40px;
-    font-weight: normal;
-    font-family: 'Grenze Gotisch', Arial;
-    text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 0 0 45px 0;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Grenze Gotisch", Arial;
+  text-align: center;
 }
 
 .store-title::after {
-    content: "";
-    border-top: 2px solid rgb(255, 255, 255);
-    width: 15%;
-    position: absolute;
-    top: 55%;
-    left: 42.5%;
+  content: "";
+  border-top: 2px solid rgb(255, 255, 255);
+  width: 15%;
+  position: absolute;
+  top: 55%;
+  left: 42.5%;
 }
-
 
 .card-logo {
     color:rgb(255, 255, 255);
@@ -325,31 +323,30 @@ header,
 }
 
 .card-store-img {
-    color:rgb(255, 255, 255);
-    margin-top: 2%;
-    margin-left: 6%;
-    height: 69px;
-    width: 69px;
-
+  color: rgb(255, 255, 255);
+  margin-top: 2%;
+  margin-left: 6%;
+  height: 69px;
+  width: 69px;
 }
 
 .card-store-title {
-    color: rgb(255, 255, 255);
-    margin: 0 0 45px 0;
-    font-size: 48px;
-    font-weight: normal;
-    font-family: 'Grenze Gotisch', Arial;
-    margin-top: 2%;
-    margin-left: 4%;
+  color: rgb(255, 255, 255);
+  margin: 0 0 45px 0;
+  font-size: 48px;
+  font-weight: normal;
+  font-family: "Grenze Gotisch", Arial;
+  margin-top: 2%;
+  margin-left: 4%;
 }
 
 .card-store-title:after {
-    content: "";
-    border-top: 2px solid rgb(255, 255, 255);
-    width: 70%;
-    position: absolute;
-    top: 28%;
-    left: 23%;
+  content: "";
+  border-top: 2px solid rgb(255, 255, 255);
+  width: 20%;
+  position: absolute;
+  top: 28%;
+  left: 40%;
 }
 
 .store-list {
@@ -670,7 +667,299 @@ section .container .signinBx .imgBx {
 section .container.active .signinBx .imgBx {
   top: -100%;
 }
+/* Responsivo */
+@media (max-width: 1199px) {
+  /* Sobre */
+  .about-title {
+    font-size: 32px;
+  }
 
+  .about-title::after {
+    top: 55px;
+  }
+
+  .about-img {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  /* Loja */
+  .card-store-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Geral */
+  .container {
+    padding: 40px;
+  }
+
+  /* Sobre */
+  .about-title {
+    padding-bottom: 25px;
+    margin: 0;
+    font-size: 32px;
+  }
+
+  .about-title::after {
+    top: 80px;
+  }
+
+  .about-text {
+    font-size: 17px;
+  }
+
+  .about-img {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
+  /* Avaliações */
+  .card-title {
+    font-size: 25px;
+  }
+
+  .five-star {
+    margin-left: 0;
+  }
+
+  .four-star {
+    padding-left: 20px;
+    margin-left: 0;
+  }
+}
+
+/* Responsivo tablet */
+@media (max-width: 767px) {
+  /* Header menu */
+  .nav-item {
+    text-align: center;
+  }
+
+  .about-title {
+    padding-bottom: 25px;
+    margin: 0;
+  }
+
+  .about-title::after {
+    left: 40%;
+    width: 20%;
+    position: absolute;
+    top: 55px;
+  }
+
+  .about-img {
+    margin-bottom: 30px;
+  }
+
+  /* Avaliações */
+  .card-title {
+    font-size: 35px;
+    position: relative;
+    text-align: center;
+    padding-left: 35px;
+  }
+
+  .five-star {
+    margin-left: 23%;
+    padding-left: 30px;
+  }
+
+  .four-star {
+    margin-left: 28%;
+    padding-left: 30px;
+  }
+
+  /* Galeria */
+  .gallery-title::after {
+    left: 40%;
+    width: 20%;
+  }
+}
+
+@media (max-width: 545px) {
+  /* Sobre */
+  .about-title {
+    padding-bottom: 25px;
+    margin: 0;
+    font-size: 27px;
+  }
+
+  .about-title::after {
+    top: 45px;
+  }
+
+  /* Loja */
+  .store-title {
+    padding-bottom: 40px;
+    margin: 0;
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 494px) {
+  /* Sobre */
+  .about-title {
+    font-size: 23px;
+  }
+
+  .about-title::after {
+    top: 40px;
+  }
+
+  /* Loja */
+  .store-title {
+    padding-bottom: 40px;
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .card-store-title {
+    font-size: 35px;
+    padding-left: 20px;
+  }
+
+  .card-store-title::after {
+    padding-left: 40px;
+    top: 25%;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-title {
+    font-size: 30px;
+  }
+
+  .about-title::after {
+    top: 85px;
+  }
+}
+
+/* Responsivo celular */
+@media (max-width: 425px) {
+  /* Geral */
+  .container {
+    padding: 40px;
+  }
+
+  /* Header menu */
+  .nav-item {
+    text-align: center;
+  }
+
+  /* Sobre */
+  #about-area {
+    margin: 50px;
+  }
+
+  #main-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-title {
+    padding-bottom: 25px;
+    margin: 0;
+  }
+
+  .about-title::after {
+    left: 40%;
+    width: 20%;
+    position: absolute;
+    top: 75 px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+
+  /* Avaliações */
+  /* #img-rating {
+    background-image: url("../img/Entrar.png");
+  } */
+
+  .rating-title {
+    padding-bottom: 25px;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .rating-title::after {
+    left: 40%;
+    width: 20%;
+    position: absolute;
+    top: 50px;
+  }
+
+  .card-title {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 20px;
+  }
+
+  .five-star {
+    padding-left: 10px;
+  }
+
+  .four-star {
+    padding-left: 10px;
+  }
+
+  /* Galeria */
+  .gallery-title {
+    padding-bottom: 25px;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .gallery-title::after {
+    left: 40%;
+    width: 20%;
+    position: absolute;
+    top: 40px;
+  }
+
+  .gallery-gif {
+    width: 300px;
+    height: 173.5px;
+  }
+
+  /* Loja */
+  /*.img-store {
+    background-image: url("../img/Cadastro.png");
+  } */
+
+  .store-title {
+    padding-bottom: 40px;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .store-title::after {
+    left: 40%;
+    width: 20%;
+    position: absolute;
+    top: 55px;
+  }
+
+  .card-store-title {
+    font-size: 25px;
+  }
+
+  .card-store-title::after {
+    left: 40%;
+    width: 25%;
+    position: absolute;
+    top: 50px;
+  }
+
+  .store-list {
+    font-size: 18px;
+  }
+}
+
+/* Responsivo login */
 @media (max-width: 1000px) {
   section .container {
     max-width: 400px;
