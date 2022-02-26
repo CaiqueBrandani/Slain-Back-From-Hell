@@ -779,6 +779,10 @@ section .container.active .signinBx .imgBx {
     left: 40%;
     width: 20%;
   }
+
+  .store-title::after {
+    top: 75%;
+  }
 }
 
 @media (max-width: 560px) {
@@ -788,6 +792,11 @@ section .container.active .signinBx .imgBx {
 
   .footer-title::after {
     top: 40%;
+  }
+
+  .gallery-gif {
+    width: 280px;
+    height: 200px;
   }
 }
 
@@ -949,10 +958,6 @@ section .container.active .signinBx .imgBx {
   }
 
   /* Loja */
-  /*.img-store {
-    background-image: url("../img/Cadastro.png");
-  } */
-
   .store-title {
     padding-bottom: 40px;
     margin: 0;
